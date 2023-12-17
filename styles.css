@@ -59,36 +59,3 @@ h1 {
         font-size: 1.2em;
     }
 }
-.photo {
-    flex: 1; /* Fill remaining space */
-    display: flex;
-    justify-content: flex-end; /* Align photo to the right */
-    align-items: center;
-    padding-right: 5vw; /* Adjusted space from the right border based on viewport width */
-    margin-left: 5vw; /* Adjusted space from the left border based on viewport width */
-}
-
-.photo img {
-    width: 30vw; /* Set image width as a percentage of viewport width */
-    max-width: 500px; /* Set maximum image width */
-    height: auto; /* Maintain aspect ratio */
-    border-radius: 10px; /* Border radius for slight smoothing */
-    /*filter: blur(5px); !* Apply a blur effect to the image *!*/
-}
-
-.content {
-    flex: 1; /* Occupy remaining space */
-}
-
-/* Adjustments for smaller screens */
-@media (max-width: 768px) {
-    .content {
-        width: 100%; /* Occupy full width */
-        padding-right: 20px; /* Adjust padding */
-        padding-left: 20px; /* Adjust padding */
-    }
-
-    .photo {
-        display: none; /* Hide the photo on smaller screens */
-    }
-}
